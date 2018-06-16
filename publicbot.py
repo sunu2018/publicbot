@@ -16,10 +16,10 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 import time, random, sys, json, codecs,  threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast
 botStart = time.time()
-prank = LineClient()
-prank.log("Auth Token : " + str(prank.authToken))
-channel = LineChannel(prank)
-prank.log("Channel Access Token : " + str(channel.channelAccessToken))
+prank = LineClient("EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=")
+#prank.log("Auth Token : " + str(prank.authToken))
+#channel = LineChannel(prank)
+#prank.log("Channel Access Token : " + str(channel.channelAccessToken))
 prankProfile = prank.getProfile()
 prankSettings = prank.getSettings()
 prankPoll = LinePoll(prank)
